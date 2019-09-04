@@ -72,12 +72,18 @@
     <!-- Inicio Introducao -->
     <section class="introducao" id="home">
       <div id="intro" class="view">
-        <h1 class="text-uppercase">Alexandre Aguiar</h1>
-        <h3 class="text-uppercase">Assistência Técnica</h3>
+        <h1 class="text-uppercase fadeInDown" data-anime="500">
+          Alexandre Aguiar
+        </h1>
+        <h3 class="text-uppercase fadeInDown" data-anime="1000">
+          Assistência Técnica
+        </h3>
         <a href="#servicos">
           <img
             src="https://media.giphy.com/media/Wtg8Bmgul1Qxc0otod/giphy.gif"
             alt="Arrow Down"
+            data-anime="1500"
+            class="fadeInDown"
           />
         </a>
       </div>
@@ -85,9 +91,11 @@
     <!-- Fim introducao -->
 
     <!-- Inicio servicos -->
-    <section id="servicos">
+    <section id="servicos" class="js-scroll">
       <div class="container">
-        <h1 class="pt-3 text-uppercase">Serviços</h1>
+        <h1 class="pt-3 text-uppercase">
+          Serviços
+        </h1>
         <div class="row pt-3 mb-5">
           <div class="col-xs-12 col-sm-6 col-md-4">
             <div class="card mb-3">
@@ -155,7 +163,7 @@
 
     <!-- Inicio contato -->
     <section id="contato" class="bg-fullBlack">
-      <div class="container">
+      <div class="container js-scroll">
         <h1 class="pt-3 text-white text-uppercase">Contato</h1>
         <div class="row pt-3 pb-3">
           <div class="col-lg mb-5">
@@ -241,6 +249,7 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/compiler/simple-anime.js"></script>
     <script src="node_modules/bootstrap/compiler/script.js"></script>
   </body>
 </html>

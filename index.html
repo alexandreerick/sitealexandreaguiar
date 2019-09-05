@@ -168,51 +168,70 @@
         <div class="row pt-3 pb-3">
           <div class="col-lg mb-5">
             <!-- Formulario -->
-            <form action="">
+            <form action="./enviar.php" method="POST" class="formphp">
               <div class="form-group">
-                <label for="exampleInputName" class="text-white pb-1"
-                  >Nome</label
-                >
+                <label for="nome" class="text-white pb-1">Nome</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputName"
+                  id="nome"
                   placeholder="Seu nome aqui"
+                  name="nome"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="exampleInputEmail" class="text-white pb-1"
-                  >Email</label
-                >
+                <label for="email" class="text-white pb-1">Email</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail"
+                  id="email"
                   placeholder="Seu email aqui"
+                  name="email"
+                  required
                 />
               </div>
               <div class="form-group">
-                <label for="exampleInputFone" class="text-white pb-1"
-                  >Telefone</label
-                >
+                <label for="telefone" class="text-white pb-1">Telefone</label>
                 <input
                   type="number"
                   class="form-control"
-                  id="exampleInputFone"
+                  id="telefone"
                   placeholder="Seu número aqui"
+                  name="telefone"
+                />
+
+                <label class="notShow"
+                  >Se você não é um robô, deixe em branco.
+                </label>
+                <input type="text" class="notShow" name="leaveblank" />
+
+                <label class="notShow"
+                  >Se você não é um robô, não mude este campo.
+                </label>
+                <input
+                  type="text"
+                  class="notShow"
+                  name="dontchange"
+                  value="http://"
                 />
               </div>
               <div class="form-group">
-                <label for="exampleTextarea" class="text-white pb-1"
-                  >Mensagem</label
-                >
+                <label for="mensagem" class="text-white pb-1">Mensagem</label>
                 <textarea
                   class="form-control"
-                  id="exampleTextarea"
+                  id="mensagem"
                   rows="3"
+                  name="mensagem"
+                  required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="enviar"
+                name="enviar"
+              >
                 Enviar Mensagem
               </button>
             </form>
@@ -250,6 +269,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/bootstrap/compiler/simple-anime.js"></script>
+    <script src="node_modules/bootstrap/compiler/simple-form.js"></script>
     <script src="node_modules/bootstrap/compiler/script.js"></script>
   </body>
 </html>
